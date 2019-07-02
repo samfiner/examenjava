@@ -1,6 +1,6 @@
-﻿package examenjava;
+﻿package examenjavalina;
 import java.util.*;
-public class Examenjava {
+public class Examenjavalina {
      public static void main(String[] args) {
 
         Scanner leer = new Scanner(System.in);
