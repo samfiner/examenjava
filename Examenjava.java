@@ -1,4 +1,4 @@
-﻿package examenjavalina;
+package examenjavalina;
 import java.util.*;
 public class Examenjavalina {
      public static void main(String[] args) {
@@ -14,9 +14,9 @@ public class Examenjavalina {
             System.out.print("Digite el nombre del estudiante: ");
             nombre.add(leer.next());
             System.out.print("Digite la velocidad del estudiante(0 para salir):");
-            opcion = leer.nextInt();
+            opc = leer.nextInt();
             if(opc != 0){
-                velocidad.add((float) opcion);
+                velocidad.add((float) opc);
                 tiempo.add(100 / velocidad.get(velocidad.size()-1));
                 set = set + tiempo.get(tiempo.size()-1);
             }
@@ -37,7 +37,7 @@ public class Examenjavalina {
             System.out.println(nombre.get(i) + " " + velocidad.get(i) + " " + tiempo.get(i));
         } 
         
-        System.out.println("Alumno más veloz: " + nombre.get(mt) + "  "+"Tiempo: " + tiempo.get(mt) +"  "+"Velocidad: " + velocidad.get(mt));
+        System.out.println("Alumno mas veloz: " + nombre.get(mt) + "  "+"Tiempo: " + tiempo.get(mt) +"  "+"Velocidad: " + velocidad.get(mt));
         System.out.println("Promedio: " + set);
         System.out.println("Estudiantes por encima del promedio: " + cont);
     }
